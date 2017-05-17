@@ -9,13 +9,19 @@
   flex-direction: row;
 }
 
+.partBox {
+  border-radius: 10%;
+  border: solid thick #444;
+  margin: 5px;
+}
 .partRow {
-  border: solid thin red;
+
 }
 
 .partGrid {
   width: 50%;  
-  background: tan;
+  padding: 10px;
+  background: grey;
 }
 
 .destGrid {
