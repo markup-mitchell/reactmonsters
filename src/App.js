@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import PartBox from './PartBox';
+// import PartBox from './PartBox';
 import DestBox from './DestBox';
 import HeadData from './HeadData';
+import PartRow from './PartRow';
 import './App.css';
 
 class App extends Component {
@@ -28,7 +29,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <PartBox handler={this.drag.bind(this)} url={this.state.heads[0]} alt="kitten"/>
+        <PartRow id='head' handler={this.drag} array={HeadData} />
+        {/*<PartBox id={HeadData[0].name} handler={this.drag.bind(this)} url={HeadData[0].img} alt="kitten"/>*/}
         <DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>
         <DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>
         <DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>
