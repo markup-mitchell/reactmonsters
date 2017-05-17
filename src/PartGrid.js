@@ -1,13 +1,15 @@
 import React from 'react';
+import PartRow from './PartRow';
 
-function PartGrid() {
+function PartGrid(props) {
   return(
-    <div class='partGrid'>
-      <PartRow(props.heads) />
-      <PartRow(props.heads) />
-      <PartRow(props.heads) />
-      <PartRow(props.heads) />
-    </div>
-  
+    <div className='partGrid'>
+      <PartRow array={props.array} handler={props.handler} /> 
+      <PartRow array={props.array} handler={props.handler} /> 
+      <PartRow array={props.array} handler={props.handler} /> 
+      <PartRow array={props.array} handler={props.handler} /> 
+    </div> 
   )
 }
+ 
+ export default PartGrid;

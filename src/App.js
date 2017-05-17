@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import DestBox from './DestBox';
 import HeadData from './HeadData';
 import PartRow from './PartRow';
+import PartGrid from './PartGrid';
 import './App.css';
 
 class App extends Component {
@@ -29,8 +30,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <PartRow id='head' handler={this.drag} array={HeadData} />
-        {/*<PartBox id={HeadData[0].name} handler={this.drag.bind(this)} url={HeadData[0].img} alt="kitten"/>*/}
+        <PartGrid array={HeadData} handler={this.drag} />
         <DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>
         <DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>
         <DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>

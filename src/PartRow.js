@@ -3,7 +3,7 @@ import PartBox from './PartBox';
 
 function PartRow(props) {
   return (
-    <div className='partRow' id={props.id}>
+    <div className='partRow'>
       {props.array.map(
         (partObj) => 
           <PartBox 
