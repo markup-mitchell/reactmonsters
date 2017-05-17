@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-// import PartBox from './PartBox';
-import DestBox from './DestBox';
+import DestGrid from './DestGrid';
 import HeadData from './HeadData';
-import PartRow from './PartRow';
 import PartGrid from './PartGrid';
 import './App.css';
 
@@ -31,11 +29,8 @@ class App extends Component {
     return (
       <div className="App">
         <PartGrid array={HeadData} handler={this.drag} />
-        <DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>
-        <DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>
-        <DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>
-        <DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>
-        <DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>
+        <DestGrid onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)} />
+        {/*<DestBox onDrop={this.drop.bind(this)} allowDrop={this.allowDrop.bind(this)}/>*/}
       </div>
     );
   }

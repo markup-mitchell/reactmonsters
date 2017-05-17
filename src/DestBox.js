@@ -2,7 +2,7 @@ import React from 'react';
 
 function DestBox(props) {
   return (
-    <div className='destBox' onDrop={props.onDrop} onDragOver={props.allowDrop}></div>
+    <div className='destBox' id={props.id} onDrop={props.onDrop} onDragOver={props.allowDrop}></div>
   )
 } 
 

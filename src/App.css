@@ -5,16 +5,54 @@
 }
 
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .partRow {
   border: solid thin red;
 }
 
+.partGrid {
+  width: 50%;  
+  background: tan;
+}
 
-.App-intro {
-  font-size: large;
+.destGrid {
+  position: relative;
+  width: 50%;
+  background: grey;
+}
+
+#headDest {
+  position: relative;
+  left: 39%;
+  top: 5%;
+}
+
+#torsoDest {
+  position: relative;
+  left: 35%;
+  top: 5%;
+  width: 30%;
+  height: 40%;
+}
+
+#arm1Dest {
+  position: relative;
+  width: 10%;
+  height: 45%;
+  left: 25%;
+  top: -35%;
+
+}
+#arm2Dest {
+  position: relative;
+  width: 10%;
+  height: 45%;
+  left: 65%;
+  top: -80%;
+
 }
 
 @keyframes App-logo-spin {
